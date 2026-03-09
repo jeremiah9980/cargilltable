@@ -1,0 +1,15 @@
+
+body {
+  line-height: 1.6;
+}
+.page-content h1, .page-content h2, .page-content h3 {
+  scroll-margin-top: 80px;
+}
+.page-content blockquote {
+  border-left: 4px solid #999;
+  padding-left: 1rem;
+  color: #444;
+}
+.page-content code {
+  font-size: 0.95em;
+}
