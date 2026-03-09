@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cargill AI Communication Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/app.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+<div class="sidebar">
+<h2>AI Analysis</h2>
+<a href="#">Overview</a>
+<a href="#dashboard">AI Dashboard</a>
+<a href="#timeline-section">Communication Timeline</a>
+<a href="#upload">Dataset Upload</a>
+<a href="#reports">Export Reports</a>
+</div>
+
+<div class="main">
+
+<div class="panel">
+<h1>Family First Communication Framework</h1>
+<p>Interactive dashboard for cross‑platform AI communication analysis using ChatGPT, Grok, and Gemini.</p>
+</div>
+
+<div id="dashboard" class="panel">
+<h2>AI Comparison Dashboard</h2>
+<canvas id="aiChart" class="chart"></canvas>
+</div>
+
+<div id="timeline-section" class="panel">
+<h2>Communication Timeline</h2>
+<table>
+<thead>
+<tr><th>Date</th><th>Event</th></tr>
+</thead>
+<tbody id="timeline"></tbody>
+</table>
+</div>
+
+<div id="upload" class="panel">
+<h2>Dataset Upload</h2>
+<input type="file" id="dataset">
+<button onclick="handleUpload()">Upload Dataset</button>
+<p id="uploadStatus"></p>
+</div>
+
+<div id="reports" class="panel">
+<h2>Export Analysis Report</h2>
+<button onclick="exportReport()">Download JSON Report</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
